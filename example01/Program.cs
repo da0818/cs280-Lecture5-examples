@@ -21,8 +21,8 @@ namespace example01
             {
                 int price = 0;
                 price = int.Parse(Console.ReadLine());
-                product.SetPrice(price);
-                Console.WriteLine("產品:{0}的價格是{1}", product.Name, product.GetPrice());
+                product.Price = price;
+                Console.WriteLine("產品:{0}的價格是{1}", product.Name, product.Price);
             }
             catch
             {

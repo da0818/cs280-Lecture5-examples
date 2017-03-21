@@ -12,24 +12,24 @@ namespace DALibrary1
         private int price;
         public float Discount;
 
-        public int GetPrice()
+        public int Price
         {
-            return this.price;
-        }
+            get { return this.price; }
 
-        public void SetPrice(int price)
-        {
-            if (price > 200)
+            set
             {
-                this.price = 200;
-            }
-            else if (price < 39)
-            {
-                this.price = 39;
-            }
-            else
-            {
-                this.price = price;
+                if (value > 200)
+                {
+                    this.price = 200;
+                }
+                else if (value < 39)
+                {
+                    this.price = 39;
+                }
+                else
+                {
+                    this.price = value;
+                }
             }
         }
     }
