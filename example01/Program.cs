@@ -29,13 +29,6 @@ namespace example01
                 Console.WriteLine("價格輸入錯誤");
                 return;
             }
-
-            Product product2 = new Product();
-            Console.Write("請輸入產品名稱")
-
-            int price2 = 0;
-            price2 = int.Parse(Console.ReadLine());
-            product2.SetPrice(price2);
         }
     }
 }
