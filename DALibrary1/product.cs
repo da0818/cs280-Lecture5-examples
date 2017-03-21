@@ -10,7 +10,7 @@ namespace DALibrary1
     {
         public string Name;
         private int price;
-        public float Discount;
+        private float discount;
 
         public int Price
         {
@@ -30,6 +30,28 @@ namespace DALibrary1
                 {
                     this.price = value;
                 }
+            }
+        }
+
+        public float Discount
+        {
+            get { return this.discount; }
+
+            set
+            {
+                if (value > 1.0f)
+                {
+                    this.discount = 1.0f;
+                }
+                else if (value < 0.3f)
+                {
+                    this.discount = 0.3f;
+                }
+                else
+                {
+                    this.discount = value;
+                }
+                this.discount = value;
             }
         }
     }
